@@ -1,9 +1,13 @@
 package gdengine
 
+import (
+	geinterfaces "github.com/eshu0/gdengine/interfaces"
+)
+
 // Grid data Parser with sturcts
 type GDEngine struct {
 	// inherit from the engine interface
-	IGDEngine
+	geinterfaces.IGDEngine
 
 	// Options
 	// this is the options for this engine

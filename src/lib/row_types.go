@@ -1,5 +1,9 @@
 package gdengine
 
+import (
+	geinterfaces "github.com/eshu0/gdengine/interfaces"
+)
+
 type GDCellData struct {
 	// Index for the Cell
 	Index GDColumnIndex
@@ -10,6 +14,7 @@ type GDCellData struct {
 }
 
 type GDRowData struct {
+	geinterfaces.IGDRowdata
 	// row index
 	Index int
 	// raw data
@@ -21,6 +26,7 @@ type GDRowData struct {
 }
 
 type GDMappedRowData struct {
+	geinterfaces.IGDMappedRowData
 	// row index
 	Index int
 	// row pass
